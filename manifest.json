@@ -3,8 +3,8 @@
   "short_name": "SneakPeek",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#343a40",
-  "theme_color": "#212529",
+  "background_color": "#00BFFF",
+  "theme_color": "#00BFFF",
   "description": "Lihat Lebih Dekat, Kenali Lebih Dalam Dunia Sneakers",
   "icons": [
     {
