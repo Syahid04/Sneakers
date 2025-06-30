@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SneakPeek</title>
+
+  <!-- Memuat Bootstrap CSS dari CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Memuat file CSS kustom (jika ada) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Memuat font dari Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <!-- Font Awesome untuk ikon favorit -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="manifest" href="manifest.json">
+  
+</head>
+<body class="bg-dark text-light">
+
+  <!-- Navbar utama dengan tema gelap dan responsif -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm">
+    <div class="container">
+      <!-- Nama brand/logo -->
+      <a class="navbar-brand" href="#">SneakPeek</a>
+
+      <!-- Tombol toggle untuk menu mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu navigasi -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Link navigasi -->
+          <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="favorites.html"> <!-- Mengubah href ke halaman terpisah -->
+              <i class="fas fa-heart"></i> Favorit
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+
+          <!-- Tombol detail produk khusus tampilan mobile -->
+          <li class="nav-item d-lg-none">
+            <a href="detail.html?id=nike" class="btn btn-info mx-auto my-2">Lihat Detail</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section dengan judul utama -->
+  <header class="py-5 text-center bg-dark text-white border-bottom border-secondary">
+    <div class="container">
+      <h1 class="display-4 fw-bold">SneakPeek</h1>
+      <p class="lead fst-italic">Lihat Lebih Dekat, Kenali Lebih Dalam Dunia Sneakers</p>
+    </div>
+  </header>
+
+  <!-- Bagian Produk Sneakers -->
+  <section id="produk" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Sepatu Sneakers Populer</h2>
+      <div class="row g-4" id="product-list">
+        <!-- Kartu Produk akan dimuat di sini oleh JavaScript -->
+
+        <!-- Contoh Kartu Produk (akan dipindahkan ke JS untuk rendering dinamis jika diperlukan) -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 bg-secondary text-light">
+            <img src="sneaker1.jpg" class="card-img-top" alt="Nike SB Dunk Low">
+            <div class="card-body">
+              <h5 class="card-title">Nike SB Dunk Low "Asparagus Vibes"</h5>
+              <p class="card-text">Kolaborasi bersama Yuto Horigome dengan warna hijau asparagus dan aksen tan-beige yang earthy.</p>
+              <a href="detail.html?id=nike" class="btn btn-info mt-2">Lihat Detail</a>
+              <button class="btn btn-outline-light add-to-favorite mt-2"
+                      data-product-id="nike"
+                      data-product-title="Nike SB Dunk Low 'Asparagus Vibes'"
+                      data-product-image="sneaker1.jpg"
+                      data-product-description="Kolaborasi bersama Yuto Horigome dengan warna hijau asparagus dan aksen tan-beige yang earthy.">
+                <i class="far fa-heart"></i> Tambahkan ke Favorit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 bg-secondary text-light">
+            <img src="sneaker2.jpg" class="card-img-top" alt="Adidas Hamburg">
+            <div class="card-body">
+              <h5 class="card-title">Adidas Hamburg "Cotton Candy Pop"</h5>
+              <p class="card-text">Warna pink manis & biru muda memberikan kesan feminin dan retro modern.</p>
+              <a href="detail.html?id=adidas" class="btn btn-info mt-2">Lihat Detail</a>
+              <button class="btn btn-outline-light add-to-favorite mt-2"
+                      data-product-id="adidas"
+                      data-product-title="Adidas Hamburg 'Cotton Candy Pop'"
+                      data-product-image="sneaker2.jpg"
+                      data-product-description="Warna pink manis & biru muda memberikan kesan feminin dan retro modern.">
+                <i class="far fa-heart"></i> Tambahkan ke Favorit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 bg-secondary text-light">
+            <img src="sneaker3.jpg" class="card-img-top" alt="Onitsuka Tiger">
+            <div class="card-body">
+              <h5 class="card-title">Onitsuka Tiger Mexico 66</h5>
+              <p class="card-text">Sentuhan vintage dengan leather cream, strip hitam, dan aksen gold di tumit.</p>
+              <a href="detail.html?id=onitsuka" class="btn btn-info mt-2">Lihat Detail</a>
+              <button class="btn btn-outline-light add-to-favorite mt-2"
+                      data-product-id="onitsuka"
+                      data-product-title="Onitsuka Tiger Mexico 66"
+                      data-product-image="sneaker3.jpg"
+                      data-product-description="Sentuhan vintage dengan leather cream, strip hitam, dan aksen gold di tumit.">
+                <i class="far fa-heart"></i> Tambahkan ke Favorit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 bg-secondary text-light">
+            <img src="sneaker4.jpg" class="card-img-top" alt="Converse x CDG">
+            <div class="card-body">
+              <h5 class="card-title">Converse Chuck 70 x CDG</h5>
+              <p class="card-text">Kolaborasi penuh karakter dengan motif hati khas Comme des Garçons.</p>
+              <a href="detail.html?id=converse" class="btn btn-info mt-2">Lihat Detail</a>
+              <button class="btn btn-outline-light add-to-favorite mt-2"
+                      data-product-id="converse"
+                      data-product-title="Converse Chuck 70 x CDG"
+                      data-product-image="sneaker4.jpg"
+                      data-product-description="Kolaborasi penuh karakter dengan motif hati khas Comme des Garçons.">
+                <i class="far fa-heart"></i> Tambahkan ke Favorit
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian Berita -->
+  <section id="berita" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Berita Sneakers Terbaru</h2>
+      <div id="news-container" class="row g-4">
+        <!-- Berita akan dimuat di sini oleh JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian Blog tentang tren sneakers -->
+  <section id="blog" class="py-5 bg-black text-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Blog Sneakers</h2>
+      <p class="text-center">Sneakers bukan lagi sekadar alas kaki, melainkan bagian dari gaya hidup dan identitas. Di tahun 2025, tren sneakers mengalami perkembangan yang menarik dengan kembalinya gaya retro dan munculnya desain futuristik. Sneakers dengan siluet klasik seperti Adidas Samba, Nike Cortez, dan Puma Suede kembali naik daun karena memberikan sentuhan nostalgia yang kuat. Sementara itu, sneakers dengan desain chunky dan warna-warna berani tetap diminati oleh kalangan muda. Tidak hanya tampilan, teknologi juga berkembang pesat—brand-brand besar berlomba-lomba menghadirkan inovasi bantalan yang lebih nyaman dan ringan, serta material ramah lingkungan yang menunjang gaya hidup berkelanjutan.</p>
+    </div>
+  </section>
+
+  <!-- Bagian Kontak -->
+  <section id="kontak" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Kontak Kami</h2>
+      <!-- Alamat email kontak -->
+      <p class="text-center">Email kami: <a href="mailto:info@sneakpeek.com" class="text-info">info@sneakpeek.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer halaman -->
+  <footer class="py-4 bg-black text-center text-muted">
+    <div class="container">
+      <small class="text-white">Arifin Nur Sahid © 2025 Informasi Sepatu Sneakers. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- JavaScript Bootstrap (untuk fungsi seperti navbar collapse) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Memuat file JavaScript kustom -->
+  <script src="app.js"></script>
+
+</body>
+</html>

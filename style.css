@@ -1,0 +1,19 @@
+.card-img-top {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Warna tautan navbar aktif dan default */
+.navbar .nav-link {
+    color: #00adb5 !important;
+  }
+  
+  /* Warna saat hover */
+  .navbar .nav-link:hover {
+    color: #ffffff !important;
+  }
+
+ 
+

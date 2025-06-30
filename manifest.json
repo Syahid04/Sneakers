@@ -1,0 +1,21 @@
+{
+  "name": "SneakPeek",
+  "short_name": "SneakPeek",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#343a40",
+  "theme_color": "#212529",
+  "description": "Lihat Lebih Dekat, Kenali Lebih Dalam Dunia Sneakers",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}
