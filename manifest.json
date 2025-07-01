@@ -8,12 +8,12 @@
   "description": "Lihat Lebih Dekat, Kenali Lebih Dalam Dunia Sneakers",
   "icons": [
     {
-      "src": "icons.png",
+      "src": "logo.png",
       "sizes": "1024x1024",
       "type": "image/png"
     },
     {
-      "src": "icons.png",
+      "src": "logo.png",
       "sizes": "1024x1024",
       "type": "image/png"
     }
